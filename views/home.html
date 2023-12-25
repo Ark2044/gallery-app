@@ -50,17 +50,17 @@
 
     <div class="sidebar-bottom">
       <div class="link">
-        <i class="fa-solid fa-house" id="home"></i>
+        <i class="fa-solid fa-house" id="home-bottom"></i>
         <a href="/">Home</a>
       </div>
 
       <div class="link">
-        <i class="fa-regular fa-user" id="login"></i>
+        <i class="fa-regular fa-user" id="login-bottom"></i>
         <a href="/login">Login</a>
       </div>
 
       <div class="link">
-        <i class="fa-regular fa-message" id="feedback"></i>
+        <i class="fa-regular fa-message" id="feedback-bottom"></i>
         <a href="/feedback">Feedback</a>
       </div>
     </div>
@@ -232,6 +232,9 @@
       var homeId = document.getElementById("home");
       var loginId = document.getElementById("login");
       var feedbackId = document.getElementById("feedback");
+      var homeBottomId = document.getElementById("home-bottom");
+      var loginBottomId = document.getElementById("login-bottom");
+      var feedbackBottomId = document.getElementById("feedback-bottom");
 
       homeId.addEventListener("click", function () {
         window.location.href = "/";
@@ -242,6 +245,18 @@
       });
 
       feedbackId.addEventListener("click", function () {
+        window.location.href = "/feedback";
+      });
+
+      homeBottomId.addEventListener("click", function () {
+        window.location.href = "/";
+      });
+
+      loginBottomId.addEventListener("click", function () {
+        window.location.href = "/login";
+      });
+
+      feedbackBottomId.addEventListener("click", function () {
         window.location.href = "/feedback";
       });
     </script>
